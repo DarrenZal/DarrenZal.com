@@ -6,7 +6,7 @@ export function isRigidbody(color: string) {
 	return !color || color === "black" ? false : true;
 }
 export function getGravityFromColor(color: string) {
-	return color === 'grey' ? 0 : 1
+	return color === "grey" ? 0 : 1;
 }
 export function getRestitutionFromColor(color: string) {
 	return color === "orange" ? 0.9 : 0;

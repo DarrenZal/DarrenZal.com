@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Discourse Graphs for Civic Knowledge Commons</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains Mono&amp;family=DM Serif Display:wght@400;700&amp;family=Bricolage Grotesque:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Discourse Graphs for Civic Knowledge Commons"/><meta property="og:description" content="Executive Summary As we face increasingly complex global challenges, there’s a growing need to transform our relationship with knowledge from passive consumption to active stewardship ..."/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="Executive Summary As we face increasingly complex global challenges, there’s a growing need to transform our relationship with knowledge from passive consumption to active stewardship ..."/><meta name="generator" content="Quartz"/><link href="./index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="./prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script></head><body data-slug="DiscourseGraphs"><div id="dappled-light"><div id="glow"></div><div id="glow-bounce"></div><div class="perspective"><div id="leaves"></div><div id="blinds"><div class="shutters"><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div></div><div class="vertical"><div class="bar"></div><div class="bar"></div></div></div></div><div id="progressive-blur"><div></div><div></div></div></div><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">Darren's Knowledge Garden 🪴</a></h2><div class="spacer mobile-only"></div><div class="search"><button class="search-button" id="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><button class="darkmode" id="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[]" aria-controls="explorer-content" aria-expanded="false"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><a href="./KnowledgeGarden" data-for="KnowledgeGarden">What is a Knowledge Garden?</a></li><li><a href="./PFASandPlasticWasteStreamSolution" data-for="PFASandPlasticWasteStreamSolution">The Chemical Crisis: An Evaluation of Pyrolysis as an Integrated Solution</a></li><li><a href="./BioregionalKnowledgeCommonsSummary" data-for="BioregionalKnowledgeCommonsSummary">Bioregional Knowledge Commoning: Summary</a></li><li><a href="./BioregionalKnowledgeCommoning1" data-for="BioregionalKnowledgeCommoning1">Bioregional Knowledge Commoning - Part 1: Foundations and Participatory Ontology Design</a></li><li><a href="./BioregionalKnowledgeCommoning2" data-for="BioregionalKnowledgeCommoning2">Bioregional Knowledge Commoning - Part 2: Technical Architecture for Sovereignty and Engagement</a></li><li><a href="./BioregionalKnowledgeCommoning3" data-for="BioregionalKnowledgeCommoning3">Bioregional Knowledge Commoning - Part 3: Governance, Sustainability, and Implementation</a></li><li><a href="./SemanticDensityPrinciple" data-for="SemanticDensityPrinciple">Semantic Density as a Foundation for Knowledge Networks</a></li><li><a href="./FromSeperationToConnection" data-for="FromSeperationToConnection">From Separation to Connection — Rethinking Data in a Relational Age</a></li><li><a href="./BioregionURI" data-for="BioregionURI">A Proposed URI Scheme for Bioregions</a></li><li><a href="./PercolationFunding" data-for="PercolationFunding">Percolation Finance: Funding at the Critical Frontier</a></li><li><a href="./GraphsForDeSci" data-for="GraphsForDeSci">Discourse Graphs for DeSci</a></li><li><a href="./DiscourseGraphs" data-for="DiscourseGraphs">Discourse Graphs for Civic Knowledge Commons</a></li><li><a href="./KnowledgeCommons" data-for="KnowledgeCommons">Knowledge Commons</a></li><li><a href="./KnowledgeGraph" data-for="KnowledgeGraph">Knowledge Graph</a></li><li><a href="./OpenProtocols" data-for="OpenProtocols">Open Protocols</a></li><li><a href="./metacrisis" data-for="metacrisis">Understanding the Metacrisis</a></li><li><a href="./cosmolocalism" data-for="cosmolocalism">Cosmo-Localism</a></li><li><a href="./resume" data-for="resume">Resume</a></li><li><a href="./siteDesign" data-for="siteDesign">About This Site</a></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Discourse Graphs for Civic Knowledge Commons</a></div></nav><h1 class="article-title">Discourse Graphs for Civic Knowledge Commons</h1><p show-comma="true" class="content-meta"><span>Nov 19, 2024</span><span>14 min read</span></p></div></div><article class="popover-hint"><h2 id="executive-summary">Executive Summary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#executive-summary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>As we face increasingly complex global challenges, there’s a growing need to transform our relationship with knowledge from passive consumption to active stewardship. Central to this transformation is the development of open protocols that can serve as composable building blocks for societal systems. Collective sensemaking emerges as a crucial capability, enabling communities to cultivate and propagate knowledge and wisdom effectively.</p>
+<p>This proposal explores how <a href="https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/" target="_blank" class="external"><strong>decentralized discourse graphs</strong><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> can be integrated into collective sensemaking protocols to enhance knowledge building, support the implementation of open protocols, and facilitate the evolutionary adaptation of our social systems. By emphasizing decentralization and democratization, we can ensure that knowledge networks become true commons—accessible to all and enriched by many.</p>
+<h2 id="introduction">Introduction<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#introduction" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>In the face of an existential <a href="https://www.sloww.co/meta-crisis-101/" target="_blank" class="external"><strong>metacrisis</strong><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, humanity must reimagine itself as an intrinsic part of the living world, responsible for the vitality of our planet and communities. <a href="https://opencivics.co/" target="_blank" class="external"><strong>OpenCivics</strong><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> proposes an approach where civic infrastructures localize and distribute resources and decision-making via open, participatory mechanisms. This necessitates the development of <a href="./OpenProtocols" class="internal alias" data-slug="OpenProtocols">open protocols</a>—patterns of human coordination that function as civilizational services using a networked approach.</p>
+<h3 id="the-value-of-decentralized-discourse">The Value of Decentralized Discourse<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-value-of-decentralized-discourse" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>To effectively develop and propagate open protocols, we require a decentralized, democratized method for mapping and <a href="https://scalingsynthesis.com/q-what-is-synthesis/" class="external">synthesizing<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>  collective knowledge. <a href="https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/" target="_blank" class="external"><strong>Decentralized discourse graphs</strong><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+offer a solution by enabling bottom-up knowledge creation across multiple domains.</p>
+<h2 id="what-are-discourse-graphs">What Are Discourse Graphs?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-are-discourse-graphs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code class="mermaid">graph BT
+    S[Source]
+    E[Evidence]
+    Q[Question]
+    C[Claim]
+
+    S -->|&quot;substantiate/contextualize&quot;| E
+    E -->|&quot;support/oppose&quot;| C
+    C -->|&quot;synthesizes&quot;| E
+    E -->|&quot;inform/generate&quot;| Q
+    C -->|&quot;inform/generate&quot;| Q
+    
+    style Q fill:#ffd700,color:#000
+    style C fill:#00cc99,color:#000
+    style E fill:#ff1493,color:#000
+    style S fill:#ffffff,color:#000
+</code></pre>
+
+<p><a href="./KnowledgeGraph" class="internal alias" data-slug="KnowledgeGraph">Discourse graphs</a> are data structures that represent knowledge as a network of interconnected nodes—such as questions, claims, evidence—and relationships like supports or opposes.</p>
+<p>The concept of discourse graphs as a structured approach to organizing knowledge has evolved over time, with different variants emerging to suit various needs and contexts. The discourse graph model described above is based on conventions proposed by <a href="https://joelchan.me/" target="_blank" class="external"><strong>Joel Chan</strong><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. However, adaptations have developed in other academic fields, reflecting unique terminologies and practices.</p>
+<p>For instance, biologist <a href="https://matsulab.com/" target="_blank" class="external"><strong>Matt Akamatsu</strong><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>’s <em>Results Graph</em> modifies the discourse graph model to align with experimental science. In this model, experiments yield data that either supports or opposes specific conclusions and generates new hypotheses. This structure reflects the iterative nature of scientific inquiry, where hypotheses motivate further experimentation, and experimental conclusions contribute to our evolving scientific theories and models of the world.</p>
+<pre><code class="mermaid">graph BT
+    E[Experiment]
+    R[Result]
+    H[Hypothesis]
+    C[Conclusion]
+    M[Model/Theory]
+
+    E --> R
+    R --> C
+    C --> H
+    C --> M
+    H -->|&quot;learning loop&quot;| E
+    
+    style H fill:#ffd700,color:#000
+    style C fill:#00cc99,color:#000
+    style R fill:#ff1493,color:#000
+    style E fill:#ffffff,color:#000
+    style M fill:#00CED1,color:#000
+    linkStyle 0,1,2,4 stroke:#ffd700,stroke-width:4px
+</code></pre>
+
+<p>In the Open Civics community, there is a unique opportunity to explore learning loops: how iterative experimentation, civic theory-building, and collaborative frameworks can be visually and structurally represented within discourse graphs to deepen our understanding of decentralized civilizational systems. Beyond conventional discourse and results graph ontologies, we might consider how implementations of protocols—each as an experiment in civic design—could generate evidence to support or refine civic hypotheses, thereby motivating further experimentation and adaptations across regions or contexts.</p>
+<h3 id="modified-graph-with-protocols--playbooks">Modified Graph with Protocols &amp; Playbooks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#modified-graph-with-protocols--playbooks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code class="mermaid">graph TB
+    C[Claim/Conclusion]
+    Q[Question/Hypothesis]
+    PR[Protocol]
+    PB[Playbook/Experiment]
+    E[Evidence/Results]
+    
+    E -->|&quot;supports/opposes&quot;| C
+    E -->|&quot;Informs/generates&quot;| Q
+    C -->|&quot;informs / generates&quot;| Q
+    Q -->|&quot;Informs&quot;| PR
+    Q -->|&quot;Informs&quot;| PB
+    PR -->|&quot;Implimented by&quot;| PB
+    PB -->|&quot;generates&quot;| E
+    
+    style Q fill:#ffd700,color:#000
+    style C fill:#98fb98,stroke-width:2px,color:#000
+    style E fill:#ff69b4,color:#000
+    style PR fill:#4169e1,stroke-width:2px,color:#000
+    style PB fill:#f5f5f5,color:#000
+    
+    linkStyle default stroke:#a3a3a1,tip:#a3a3a1, stroke-width:4px;
+</code></pre>
+<h3 id="decentralizing-the-discourse-graph">Decentralizing the Discourse Graph<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#decentralizing-the-discourse-graph" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Decentralization of discourse graphs means:</p>
+<ul>
+<li><strong>Distributed Contribution:</strong> Allowing anyone to add to the knowledge base.</li>
+<li><strong>Role Diversification:</strong> Supporting diverse roles in the knowledge commons:
+<ul>
+<li><strong>Primary Researchers:</strong> Contribute original research and data</li>
+<li><strong>Synthesizers:</strong> Formalize and connect research into coherent frameworks</li>
+<li><strong>Annotators:</strong> Read and annotate content, making meaningful connections</li>
+<li><strong>Validators:</strong> Evaluate contributions to improve signal-to-noise ratio</li>
+<li><strong>Facilitators:</strong> Help determine directions for exploration</li>
+<li><strong>Stewards:</strong> Manage specific knowledge domains or bioregional commons</li>
+</ul>
+</li>
+<li><strong>No Central Authority:</strong> Eliminating centralized control over knowledge synthesis and validation.</li>
+<li><strong>Local Autonomy:</strong> Supporting bioregional (e.g., a <a href="./BioregionalKnowledgeCommons" class="internal alias" data-slug="BioregionalKnowledgeCommons">Bioregional Knowledge Commons</a>) and domain-specific knowledge commons managed by local experts or communities.</li>
+</ul>
+<h2 id="supporting-progressive-formalization">Supporting Progressive Formalization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#supporting-progressive-formalization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The process of <a href="https://scalingsynthesis.com/c-synthesis-tools-need-to-support-incremental-formalization/" target="_blank" class="external"><strong>incremental formalization</strong><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> is crucial for protocol development, allowing communities to start with informal documentation and gradually add structure as patterns and needs emerge. This approach addresses the cognitive overhead and premature structuring challenges identified in knowledge management systems.</p>
+<h3 id="stage-1-informal-exploration-and-discovery">Stage 1: Informal Exploration and Discovery<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stage-1-informal-exploration-and-discovery" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<details>
+<summary>Lightweight Entry</summary><br/>
+Begin with minimal structure to maximize exploration and reduce cognitive overhead.
+<ul>
+<li>Allow free-form documentation of community practices</li>
+<li>Support varied media types and formats</li>
+<li>Defer formal categorization until patterns emerge</li>
+</ul>
+</details>
+<details>
+<summary>Emergent Question Formation</summary><br/>
+Building on The Society Library's methodology, discourse graphs can implement a &quot;descriptive emergent structuring&quot; approach where:
+<ul>
+<li>Questions emerge organically from collected evidence and claims</li>
+<li>Multiple perspectives and approaches are documented informally</li>
+<li>Initial relationships form naturally through basic linking and tagging</li>
+<li>Pattern recognition algorithms suggest potential structural relationships</li>
+</ul>
+</details>
+<details>
+<summary>Community Documentation</summary><br/>
+Enable natural documentation flows with minimal barriers to entry.
+<ul>
+<li>Capture approaches and evidence in their natural form</li>
+<li>Use simple markup or tags for basic organization</li>
+<li>Allow multiple entry points based on user preference and context</li>
+</ul>
+</details>
+<h3 id="stage-2-incremental-formalization">Stage 2: Incremental Formalization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stage-2-incremental-formalization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<details>
+<summary>Pattern Recognition</summary><br/><br/>
+Identify and surface emerging patterns in community knowledge.
+<ul>
+<li>Automated systems identify recurring patterns in informal documentation</li>
+<li>Community stewards suggest potential formal structures</li>
+<li>Users can accept, modify, or reject suggested formalizations</li>
+</ul>
+</details>
+<details>
+<summary>Collaborative Specification</summary><br/>
+Convert emerging patterns into more formal protocol specifications.
+<ul>
+<li>Convert successful patterns into protocol specifications</li>
+<li>Maintain flexibility to adapt specifications as needs evolve</li>
+<li>Support multiple levels of formality simultaneously</li>
+</ul>
+</details>
+<details>
+<summary>Relationship Development</summary><br/>
+Allow relationships to formalize naturally as their value becomes apparent.
+<ul>
+<li>Formalize relationships between nodes as their utility becomes clear</li>
+<li>Support both structured and unstructured connections</li>
+<li>Enable search-based relationship discovery</li>
+</ul>
+</details>
+<h3 id="stage-3-adaptation-and-evolution">Stage 3: Adaptation and Evolution<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stage-3-adaptation-and-evolution" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<details>
+<summary>Local Customization</summary><br/>
+Support contextual adaptation of formalized protocols.
+<ul>
+<li>Communities adapt formal protocols to local contexts</li>
+<li>Document variations through playbooks</li>
+<li>Maintain links between formal and informal elements</li>
+</ul>
+</details>
+<details>
+<summary>Organic Growth</summary><br/>
+Enable natural evolution of protocols through community practice.
+<ul>
+<li>Protocols evolve through community usage patterns</li>
+<li>Support both structured evolution (forking/merging) and informal adaptation</li>
+<li>Enable cross-pollination of ideas across communities</li>
+</ul>
+</details>
+<h3 id="implementation-support">Implementation Support<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-support" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<details>
+<summary>Role Flexibility</summary><br/>
+Support diverse community roles in the formalization process.
+<ul>
+<li>Curators: Help identify emerging patterns</li>
+<li>Connectors: Surface potential relationships</li>
+<li>Formalizers: Assist in structuring mature content</li>
+<li>Mediators: Bridge between formal and informal approaches</li>
+</ul>
+</details>
+<details>
+<summary>Technical Features</summary><br/>
+Provide tools that support incremental formalization.
+<ul>
+<li>Pattern recognition algorithms to suggest structure</li>
+<li>Rich search capabilities to surface related content</li>
+<li>Flexible metadata systems that grow with usage</li>
+<li>Tools for incremental addition of formal attributes</li>
+</ul>
+</details>
+<p>This approach balances the need for structure with the reality of how knowledge and practices evolve, allowing communities to formalize their understanding progressively while maintaining the benefits of emergent organization.</p>
+<h2 id="integration-with-decentralized-science-desci">Integration with Decentralized Science (DeSci)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-with-decentralized-science-desci" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The discourse graph approach for civic knowledge commons is highly complementary with <a href="./GraphsForDeSci" class="internal alias" data-slug="GraphsForDeSci">Decentralized Science (DeSci)</a>. Both frameworks aim to transform traditional knowledge creation and sharing processes through decentralization and democratization.</p>
+<details>
+<summary>Key synergies</summary><br/>
+<ol>
+<li>
+<p><strong>Shared Infrastructure</strong></p>
+<ul>
+<li>Both utilize discourse graphs for knowledge representation</li>
+<li>Common decentralized storage and verification mechanisms</li>
+<li>Shared protocols for knowledge validation and attribution</li>
+</ul>
+</li>
+<li>
+<p><strong>Complementary Goals</strong></p>
+<ul>
+<li>DeSci focuses on democratizing scientific research and funding</li>
+<li>Civic knowledge commons emphasize local implementation and adaptation</li>
+<li>Together they create a full cycle from research to civic application</li>
+</ul>
+</li>
+<li>
+<p><strong>Mutual Benefits</strong></p>
+<ul>
+<li>Scientific findings inform civic protocol development</li>
+<li>Community implementations provide real-world validation</li>
+<li>Shared incentive mechanisms encourage participation</li>
+<li>Cross-pollination between academic and civic knowledge</li>
+</ul>
+</li>
+<li>
+<p><strong>Joint Impact</strong></p>
+<ul>
+<li>Accelerates knowledge transfer between research and practice</li>
+<li>Enables evidence-based civic infrastructure development</li>
+<li>Supports bottom-up scientific inquiry driven by community needs</li>
+<li>Creates feedback loops between theory and implementation</li>
+</ul>
+</li>
+</ol>
+</details>
+<p>This integration enables a new model where scientific research and civic implementation evolve together, creating more resilient and adaptive knowledge systems.</p>
+<h2 id="technical-overview">Technical Overview<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#technical-overview" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The implementation leverages existing decentralized tools and semantic web standards while introducing new structures for protocols and playbooks. Key features include:</p>
+<ul>
+<li>Document-based nodes with frontmatter metadata</li>
+<li>Support for protocols and playbooks as first-class citizens</li>
+<li>Integration with decentralized tools and semantic web standards</li>
+<li>Flexible query capabilities across federated instances</li>
+</ul>
+<p>For complete technical specifications and implementation details, see <a href="#appendix-a-technical-specification" class="internal alias">Appendix A: Technical Specification</a>.</p>
+<h2 id="practical-applications">Practical Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#practical-applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="https://www.societylibrary.org/" target="_blank" class="external"><strong>The Society Library</strong><svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>’s success in mapping complex societal debates demonstrates the practical viability of structured knowledge representation for collective sensemaking. Their experience shows that careful attention to bias reduction, comprehensive media coverage, and emergent structure can help create truly representative knowledge commons. By incorporating these lessons into our discourse graphs approach, we can better ensure our knowledge networks serve as genuine tools for democratic deliberation and collective wisdom building.</p>
+<h3 id="the-open-protocol-library-as-a-knowledge-commons">The Open Protocol Library as a Knowledge Commons<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-open-protocol-library-as-a-knowledge-commons" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The concept of an open protocol library exemplifies how knowledge commons can be structured to support collaborative research and development. As illustrated in our flowcharts, scientific inquiry involves iterative cycles of synthesis and validation, where evidence informs claims and generates new questions. A protocol library serves as a vital infrastructure for this process.</p>
+<p>Consider the case of quadratic funding in the Cascadia Bioregion (see <a href="#appendix-b-case-studies" class="internal alias">Appendix B: Case Studies</a>). This example demonstrates how:</p>
+<ul>
+<li>Communities can adapt formal protocols to local contexts</li>
+<li>Evidence from implementations feeds back into protocol development</li>
+<li>Local variations contribute to the broader knowledge commons</li>
+<li>Query capabilities enable learning across implementations</li>
+</ul>
+<h2 id="implementation-plan">Implementation Plan<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-plan" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<h3 id="steps-forward">Steps Forward<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#steps-forward" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<details>
+<summary> 1. Establish Decentralized Infrastructure</summary>
+<ul>
+<li>Set up peer-to-peer networks and decentralized storage solutions.</li>
+<li>Develop protocols for data synchronization and conflict resolution.</li>
+</ul>
+</details>
+<details>
+<summary> 2.  Define Community Roles</summary>
+<ul>
+<li>Clearly outline roles and responsibilities to encourage participation.</li>
+<li>Provide guidelines and tools tailored to each role.</li>
+</ul>
+</details>
+<details>
+<summary> 3.  Develop User-Friendly Tools</summary>
+<ul>
+<li>Create interfaces that simplify interaction with the discourse graph.</li>
+<li>Ensure accessibility across different devices and platforms.</li>
+</ul>
+</details>
+<details>
+<summary> 4.  Pilot Projects</summary>
+<ul>
+<li>Initiate pilot programs in selected bioregions or domains.</li>
+<li>Gather feedback to refine processes and tools.</li>
+</ul>
+</details>
+<details>
+<summary> 5.  Community Engagement</summary>
+<ul>
+<li>Conduct outreach to educate potential participants.</li>
+<li>Facilitate workshops and training sessions.</li>
+</ul>
+</details>
+<details>
+<summary> 6.  Iterative Development</summary>
+<ul>
+<li>Continuously improve based on user feedback and technological advancements.</li>
+<li>Encourage open-source contributions to tool development.</li>
+</ul>
+</details>
+<h3 id="success-metrics">Success Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#success-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li><strong>Participation Rates:</strong> Measure the diversity and number of contributors.</li>
+<li><strong>Decentralization Level:</strong> Assess the distribution of data and control.</li>
+<li><strong>Cross-Format Coherence:</strong> Assess how well arguments and claims maintain consistency across different media formats</li>
+<li><strong>Community Satisfaction:</strong> Gather feedback on usability and impact.</li>
+<li><strong>Protocol Evolution:</strong> Track how protocols adapt and improve over time.</li>
+<li><strong>Knowledge Diversity:</strong> Evaluate the range of knowledge domains and regions represented.</li>
+</ol>
+<h2 id="conclusion">Conclusion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#conclusion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Integrating decentralized discourse graphs into Knowledge Commons aligns with the principles of decentralization, democratization, and collective stewardship. By distributing responsibilities and empowering diverse participation, we create a resilient and inclusive knowledge network that serves as a true commons. This approach not only enhances the development and propagation of open protocols but also embodies the transformative vision of reimagining ourselves as active stewards of our planet and communities. Together, we can harness the collective intelligence needed to address the existential challenges of our time.</p>
+<h2 id="further-reading">Further Reading<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#further-reading" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><a href="https://research.protocol.ai/blog/2023/discourse-graphs-and-the-future-of-science/" class="external">Discourse Graphs and the Future of Science<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><br/>
+<a href="https://youtu.be/P0KUt2yrUkw" class="external">Mapping Investments in Scientific Public Goods<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<script src="https://giscus.app/client.js" data-repo="DarrenZal/Quartz" data-repo-id="R_kgDONJp5NA" data-category="Announcements" data-category-id="DIC_kwDONJp5NM4Cj_Fw" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark_dimmed" data-lang="en" crossorigin="anonymous" async>
+</script>
+<hr/>
+<h1 id="appendix-a-technical-specification">Appendix A: Technical Specification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#appendix-a-technical-specification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h3 id="document-structure-with-decentralization-in-mind">Document Structure with Decentralization in Mind<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#document-structure-with-decentralization-in-mind" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Each markdown file represents a node in the discourse graph, defined by frontmatter metadata.</p>
+<h4 id="protocol-nodes">Protocol Nodes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#protocol-nodes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Protocols are general guidelines not tied to a specific locality. They are openly documented and freely available for anyone to use, implement, and modify.</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">protocol</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">protocol-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">author-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">contributors</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">contributor-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">relationships</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">related_to</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">node-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Objective:** [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Describe the purpose and goal of the protocol.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Scope:** [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">What's included and excluded in the protocol.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Procedures:** [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Step-by-step instructions to achieve the objective.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Roles </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">and Responsibilities:** [Who is responsible for each action within the procedures.]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Materials </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">and Equipment:** [What’s required to carry out the procedures.]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Guidelines:** [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Suggested considerations while conducting procedures.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Documentation:** [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Suggestions on how to document the outcomes of the procedures.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span></code></pre></figure>
+<h4 id="playbook-nodes">Playbook Nodes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#playbook-nodes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Playbooks document the use or implementation of a protocol in a specific context or locality. They capture adaptations and practical applications.</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">playbook</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">playbook-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">author-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">contributors</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">contributor-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">protocol</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">protocol-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">locality</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">bioregion or domain</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">relationships</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">implements</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">protocol-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">supports</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">node-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">opposes</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">node-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">permissions</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  read</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">public | group</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  write</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">public | group</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Detailed documentation of how the protocol was implemented</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">including any adaptations or outcomes.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span></code></pre></figure>
+<h4 id="other-nodes">Other Nodes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#other-nodes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<details>
+<summary>Question Nodes</summary>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">question</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">question-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">author-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">contributors</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">contributor-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">relationships</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">related_to</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">node-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Question text.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span></code></pre></figure>
+</details>
+<details>
+<summary>Claim Nodes</summary>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">claim</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">claim-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">author-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">contributors</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">contributor-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">relationships</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">supports</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">node-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">opposes</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">node-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Claim text.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span></code></pre></figure>
+</details>
+<details>
+<summary>Evidence Nodes</summary>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">evidence</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">evidence-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">author-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">contributors</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">contributor-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">relationships</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">supports</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">node-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">opposes</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">node-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">[</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Evidence content.</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span></code></pre></figure>
+</details>
+<h3 id="integration-with-decentralized-tools">Integration with Decentralized Tools<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-with-decentralized-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Version Control:</strong> Use decentralized version control systems like git and TerminusDB.</li>
+<li><strong>Publishing Platforms:</strong> Leverage decentralized web technologies for hosting content: Arweave, IPFS, OriginTrail for example.</li>
+<li><strong>Local-first Editing Tools:</strong> Promote the use of open-source, local-first, decentralized editors.</li>
+<li><strong>Contribution Mechanisms:</strong> Implement systems that allow for merging contributions without central gatekeepers.</li>
+<li><strong>Federated Queries:</strong> Allow queries to span across multiple nodes or instances, supporting a federated approach.</li>
+</ul>
+<h3 id="integration-with-semantic-web-standards">Integration with Semantic Web Standards<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-with-semantic-web-standards" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The discourse graph structure naturally aligns with semantic web standards (see <a href="./SemanticDensityPrinciple" class="internal alias" data-slug="SemanticDensityPrinciple">Semantic Density Principle</a> for importance of semantics), enabling interoperability across different knowledge representation formats:</p>
+<details>
+<summary>RDF Compatibility</summary>
+<ul>
+<li><strong>Natural Mapping:</strong> Discourse graph nodes and relationships map directly to RDF subject-predicate-object triples</li>
+<li><strong>Flexible Serialization:</strong> Content can be represented in various formats (Markdown+frontmatter, JSON-LD, RDF/XML) while maintaining semantic meaning</li>
+<li><strong>Vocabulary Alignment:</strong> Node types and relationships can be defined using standard RDF vocabularies or custom ontologies</li>
+</ul>
+<p>Example of a Protocol node in JSON-LD:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="json" data-theme="github-light github-dark"><code data-language="json" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">{</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">  &quot;@context&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: {</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    &quot;@vocab&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;http://opencivics.org/ns/&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    &quot;dc&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;http://purl.org/dc/terms/&quot;</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  },</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">  &quot;@type&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;Protocol&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">  &quot;@id&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;protocol-qf&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">  &quot;dc:creator&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;user111&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">  &quot;dc:contributor&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;user222&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">],</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">  &quot;relationship&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: {</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    &quot;@type&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;RelatedTo&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">    &quot;@id&quot;</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;node-123&quot;</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  }</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></figure>
+</details>
+<h1 id="appendix-b-case-studies">Appendix B: Case Studies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#appendix-b-case-studies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<h2 id="quadratic-funding-in-the-cascadia-bioregion">Quadratic Funding in the Cascadia Bioregion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#quadratic-funding-in-the-cascadia-bioregion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Question Node:</strong></p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">question</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">qf-001</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;user789&quot;</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">contributors</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;user101&quot;</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">relationships</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">related_to</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">protocol-id for quadratic funding</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">How can quadratic funding be effective for funding a synergistic set of projects in the Cascadia Bioregion?</span></span></code></pre></figure>
+<p><strong>Protocol Node (Quadratic Funding):</strong></p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">protocol</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">protocol-qf</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;user111&quot;</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">contributors</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;user222&quot;</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">relationships</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">related_to</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: [</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">node-id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">]</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Objective:** </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">To democratize funding allocation by matching community contributions with a funding pool based on the quadratic funding mechanism.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Scope:** </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Applicable to public goods projects seeking community support. Excludes projects that do not meet public goods criteria.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Procedures:**</span></span>
+<span data-line><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">1. Projects submit proposals for funding.</span></span>
+<span data-line><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">2. Community members contribute funds to preferred projects.</span></span>
+<span data-line><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">3. Total contributions are matched from a funding pool using the quadratic funding formula.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Roles </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">and Responsibilities:**</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Project </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Owners:** Submit proposals and engage with the community.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Community </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Members:** Contribute funds to projects.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Funding </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Pool Stewards:** Manage the matching funds and oversee the allocation process.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Materials </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">and Equipment:** Online platform for submissions and contributions.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Guidelines:** </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Ensure transparency in contributions and allocations.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Documentation:** </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Maintain records of contributions, matching calculations, and project outcomes.</span></span></code></pre></figure>
+<p><strong>Playbook Node (Cascadia Implementation):</strong></p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="yaml" data-theme="github-light github-dark"><code data-language="yaml" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">type</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">playbook</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">id</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">playbook-qf-cascadia</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">author</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;user333&quot;</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">contributors</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;user444&quot;</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">protocol</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">protocol-qf</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">locality</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">&quot;Cascadia Bioregion&quot;</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">relationships</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">implements</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">protocol-qf</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">  - </span><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">supports</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">qf-001</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">permissions</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">:</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  read</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">public</span></span>
+<span data-line><span style="--shiki-light:#22863A;--shiki-dark:#85E89D;">  write</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">: </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">group</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">---</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Implementation </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Details:**</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">We adapted the quadratic funding protocol for the Cascadia Bioregion to support environmental sustainability projects.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Adaptations:**</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Local </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Currency Integration:** Accepted contributions in a regional currency to encourage local economic circulation.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Project </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Criteria:** Focused on projects that enhance ecological resilience.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Outcomes:**</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Funded 15 projects with strong community engagement.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Achieved a matching pool utilization rate of 90%.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Lessons </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Learned:**</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Community education on quadratic funding increased participation.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Local currency acceptance boosted contributions by 25%.</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">*</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">*Future </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Recommendations:**</span></span>
+<span data-line> </span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Expand outreach to underrepresented communities.</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">- </span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;">Consider periodic funding rounds to maintain momentum.</span></span></code></pre></figure>
+<p><strong>Queries:</strong></p>
+<p>Participants can run queries to gain insights, for example using Obsidian’s dataview feature.</p>
+<details>
+<summary>Example Query</summary>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="dataview" data-theme="github-light github-dark"><code data-language="dataview" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>// Find all playbooks implementing the quadratic funding protocol in Cascadia, ranked by outcomes</span></span>
+<span data-line><span>TABLE</span></span>
+<span data-line><span>  playbook.id as &quot;Playbook ID&quot;,</span></span>
+<span data-line><span>  playbook.author as &quot;Author&quot;,</span></span>
+<span data-line><span>  playbook[&quot;Outcomes&quot;] as &quot;Outcomes&quot;,</span></span>
+<span data-line><span>  playbook[&quot;Lessons Learned&quot;] as &quot;Lessons Learned&quot;,</span></span>
+<span data-line><span>  contributors,</span></span>
+<span data-line><span>  locality</span></span>
+<span data-line><span>FROM &quot;playbooks&quot; as playbook</span></span>
+<span data-line><span>WHERE playbook.protocol == &quot;protocol-qf&quot; AND playbook.locality == &quot;Cascadia Bioregion&quot;</span></span>
+<span data-line><span>SORT playbook[&quot;Outcomes&quot;][&quot;Matching Pool Utilization&quot;] DESC</span></span></code></pre></figure>
+<p><strong>Explanation:</strong></p>
+<ul>
+<li><strong>Purpose:</strong> Retrieve playbooks that implemented the quadratic funding protocol in the Cascadia Bioregion.</li>
+<li><strong>Outcomes Analysis:</strong> Examine the effectiveness based on metrics like matching pool utilization.</li>
+<li><strong>Insights Gained:</strong> Identify successful adaptations and areas for improvement.</li>
+</ul>
+</details></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><div class="graph-header"><h3>Graph View</h3></div><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false}"></div><button id="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;showKnowledgeGraph&quot;:false}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content" class><ul class="overflow"><li class="depth-1"><a href="#executive-summary" data-for="executive-summary">Executive Summary</a></li><li class="depth-1"><a href="#introduction" data-for="introduction">Introduction</a></li><li class="depth-2"><a href="#the-value-of-decentralized-discourse" data-for="the-value-of-decentralized-discourse">The Value of Decentralized Discourse</a></li><li class="depth-1"><a href="#what-are-discourse-graphs" data-for="what-are-discourse-graphs">What Are Discourse Graphs?</a></li><li class="depth-2"><a href="#modified-graph-with-protocols--playbooks" data-for="modified-graph-with-protocols--playbooks">Modified Graph with Protocols &amp; Playbooks</a></li><li class="depth-2"><a href="#decentralizing-the-discourse-graph" data-for="decentralizing-the-discourse-graph">Decentralizing the Discourse Graph</a></li><li class="depth-1"><a href="#supporting-progressive-formalization" data-for="supporting-progressive-formalization">Supporting Progressive Formalization</a></li><li class="depth-2"><a href="#stage-1-informal-exploration-and-discovery" data-for="stage-1-informal-exploration-and-discovery">Stage 1: Informal Exploration and Discovery</a></li><li class="depth-2"><a href="#stage-2-incremental-formalization" data-for="stage-2-incremental-formalization">Stage 2: Incremental Formalization</a></li><li class="depth-2"><a href="#stage-3-adaptation-and-evolution" data-for="stage-3-adaptation-and-evolution">Stage 3: Adaptation and Evolution</a></li><li class="depth-2"><a href="#implementation-support" data-for="implementation-support">Implementation Support</a></li><li class="depth-1"><a href="#integration-with-decentralized-science-desci" data-for="integration-with-decentralized-science-desci">Integration with Decentralized Science (DeSci)</a></li><li class="depth-1"><a href="#technical-overview" data-for="technical-overview">Technical Overview</a></li><li class="depth-1"><a href="#practical-applications" data-for="practical-applications">Practical Applications</a></li><li class="depth-2"><a href="#the-open-protocol-library-as-a-knowledge-commons" data-for="the-open-protocol-library-as-a-knowledge-commons">The Open Protocol Library as a Knowledge Commons</a></li><li class="depth-1"><a href="#implementation-plan" data-for="implementation-plan">Implementation Plan</a></li><li class="depth-2"><a href="#steps-forward" data-for="steps-forward">Steps Forward</a></li><li class="depth-2"><a href="#success-metrics" data-for="success-metrics">Success Metrics</a></li><li class="depth-1"><a href="#conclusion" data-for="conclusion">Conclusion</a></li><li class="depth-1"><a href="#further-reading" data-for="further-reading">Further Reading</a></li><li class="depth-0"><a href="#appendix-a-technical-specification" data-for="appendix-a-technical-specification">Appendix A: Technical Specification</a></li><li class="depth-2"><a href="#document-structure-with-decentralization-in-mind" data-for="document-structure-with-decentralization-in-mind">Document Structure with Decentralization in Mind</a></li><li class="depth-2"><a href="#integration-with-decentralized-tools" data-for="integration-with-decentralized-tools">Integration with Decentralized Tools</a></li><li class="depth-2"><a href="#integration-with-semantic-web-standards" data-for="integration-with-semantic-web-standards">Integration with Semantic Web Standards</a></li><li class="depth-0"><a href="#appendix-b-case-studies" data-for="appendix-b-case-studies">Appendix B: Case Studies</a></li><li class="depth-1"><a href="#quadratic-funding-in-the-cascadia-bioregion" data-for="quadratic-funding-in-the-cascadia-bioregion">Quadratic Funding in the Cascadia Bioregion</a></li></ul></div></div><div class="backlinks"><h3>Backlinks</h3><ul class="overflow"><li><a href="./BioregionURI" class="internal">A Proposed URI Scheme for Bioregions</a></li><li><a href="./FromSeperationToConnection" class="internal">From Separation to Connection — Rethinking Data in a Relational Age</a></li><li><a href="./GraphsForDeSci" class="internal">Discourse Graphs for DeSci</a></li><li><a href="./KnowledgeCommons" class="internal">Knowledge Commons</a></li><li><a href="./KnowledgeGraph" class="internal">Knowledge Graph</a></li><li><a href="./OpenProtocols" class="internal">Open Protocols</a></li><li><a href="./" class="internal">Exploring Protocols for Regenerative Global Civilization</a></li><li><a href="./metacrisis" class="internal">Understanding the Metacrisis</a></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v1.0.0</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
+
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script src="./postscript.js" type="module"></script></html>

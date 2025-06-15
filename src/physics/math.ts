@@ -7,17 +7,23 @@ type ShapeTransform = {
 	height: number;
 	rotation: number;
 	parent?: Geometry2d;
-}
+};
 
 // Define rotatePoint as a standalone function
-const rotatePoint = (cx: number, cy: number, x: number, y: number, angle: number) => {
+const rotatePoint = (
+	cx: number,
+	cy: number,
+	x: number,
+	y: number,
+	angle: number,
+) => {
 	const cos = Math.cos(angle);
 	const sin = Math.sin(angle);
 	return {
 		x: cos * (x - cx) - sin * (y - cy) + cx,
 		y: sin * (x - cx) + cos * (y - cy) + cy,
 	};
-}
+};
 
 export const cornerToCenter = ({
 	x,
@@ -25,7 +31,7 @@ export const cornerToCenter = ({
 	width,
 	height,
 	rotation,
-	parent
+	parent,
 }: ShapeTransform): { x: number; y: number } => {
 	const centerX = x + width / 2;
 	const centerY = y + height / 2;
@@ -37,7 +43,7 @@ export const cornerToCenter = ({
 	}
 
 	return rotatedCenter;
-}
+};
 
 export const centerToCorner = ({
 	x,
@@ -46,12 +52,11 @@ export const centerToCorner = ({
 	height,
 	rotation,
 }: ShapeTransform): { x: number; y: number } => {
-
 	const cornerX = x - width / 2;
 	const cornerY = y - height / 2;
 
 	return rotatePoint(x, y, cornerX, cornerY, rotation);
-}
+};
 
 export const getDisplacement = (
 	velocity: VecLike,
@@ -63,7 +68,7 @@ export const getDisplacement = (
 	let newVelocityX =
 		acceleration.x === 0 && velocity.x !== 0
 			? Math.max(Math.abs(velocity.x) - decelerationX * timeStep, 0) *
-			Math.sign(velocity.x)
+			  Math.sign(velocity.x)
 			: velocity.x + acceleration.x * timeStep;
 
 	newVelocityX =
@@ -71,11 +76,10 @@ export const getDisplacement = (
 
 	const averageVelocityX = (velocity.x + newVelocityX) / 2;
 	const x = averageVelocityX * timeStep;
-	const y =
-		velocity.y * timeStep + 0.5 * acceleration.y * timeStep ** 2;
+	const y = velocity.y * timeStep + 0.5 * acceleration.y * timeStep ** 2;
 
-	return { x, y }
-}
+	return { x, y };
+};
 
 export const convertVerticesToFloat32Array = (
 	vertices: Vec[],
@@ -92,4 +96,4 @@ export const convertVerticesToFloat32Array = (
 	}
 
 	return vec2Array;
-}
+};

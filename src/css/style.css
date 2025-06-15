@@ -249,6 +249,21 @@ p:has(+ ol) {
   display: none;
 }
 
+/* Ensure toggle buttons are visible over Quartz content */
+#toggle-canvas,
+#toggle-physics {
+  z-index: 10000;
+  position: fixed !important;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#toggle-canvas:hover,
+#toggle-physics:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
 .tl-html-layer {
   font-family: "Recursive";
   font-variation-settings: "MONO" 1;
@@ -287,6 +302,8 @@ p:has(+ ol) {
   position: fixed;
   inset: 0px;
   overflow: hidden;
+  background-color: #f0f0f0;
+  z-index: 1000;
 }
 
 .tl-background {
@@ -301,4 +318,45 @@ p:has(+ ol) {
   box-shadow: 0 0px 16px rgba(0, 0, 0, 0.15);
   overflow: hidden;
   background-color: white;
+}
+
+/* Quartz embedded styling */
+.quartz-embedded {
+  font-family: inherit !important;
+}
+
+/* Hide the original styles when displaying Quartz content */
+.quartz-embedded main {
+  max-width: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Ensure Quartz content doesn't conflict with canvas */
+.quartz-embedded #quartz-root {
+  position: static !important;
+}
+
+/* Override any conflicting Quartz styles for canvas integration */
+.quartz-embedded .tldraw__editor {
+  position: static !important;
+}
+
+/* Website frame styling when embedded in canvas */
+.website-frame {
+  pointer-events: auto !important;
+}
+
+.website-frame .quartz-embedded {
+  height: 100% !important;
+  overflow: auto !important;
+}
+
+/* Ensure proper interaction in canvas mode */
+.canvas-mode .website-frame {
+  pointer-events: auto;
+}
+
+.canvas-mode .website-frame * {
+  pointer-events: auto;
 }

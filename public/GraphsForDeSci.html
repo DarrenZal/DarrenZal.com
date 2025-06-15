@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en"><head><title>Discourse Graphs for DeSci</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains Mono&amp;family=DM Serif Display:wght@400;700&amp;family=Bricolage Grotesque:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta property="og:title" content="Discourse Graphs for DeSci"/><meta property="og:description" content="Decentralized Science (DeSci) seeks to address issues in traditional scientific practices around funding, publishing, and collaboration. Discourse graphs provide an elegant framework that can support the full spectrum of scientific work - from synthesizing existing research to mapping out and funding new frontiers."/><meta property="og:width" content="1200"/><meta property="og:height" content="675"/><link rel="icon" href="./static/icon.png"/><meta name="description" content="Decentralized Science (DeSci) seeks to address issues in traditional scientific practices around funding, publishing, and collaboration. Discourse graphs provide an elegant framework that can support the full spectrum of scientific work - from synthesizing existing research to mapping out and funding new frontiers."/><meta name="generator" content="Quartz"/><link href="./index.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="./prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("./static/contentIndex.json").then(data => data.json())</script></head><body data-slug="GraphsForDeSci"><div id="dappled-light"><div id="glow"></div><div id="glow-bounce"></div><div class="perspective"><div id="leaves"></div><div id="blinds"><div class="shutters"><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div><div class="shutter"></div></div><div class="vertical"><div class="bar"></div><div class="bar"></div></div></div></div><div id="progressive-blur"><div></div><div></div></div></div><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".">Darren's Knowledge Garden 🪴</a></h2><div class="spacer mobile-only"></div><div class="search"><button class="search-button" id="search-button"><p>Search</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div id="search-container"><div id="search-space"><input autocomplete="off" id="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div id="search-layout" data-preview="true"></div></div></div></div><button class="darkmode" id="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button><div class="explorer desktop-only"><button type="button" id="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-tree="[]" aria-controls="explorer-content" aria-expanded="false"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-content"><ul class="overflow" id="explorer-ul"><li><div class="folder-outer open"><ul style="padding-left:0;" class="content" data-folderul><li><a href="./KnowledgeGarden" data-for="KnowledgeGarden">What is a Knowledge Garden?</a></li><li><a href="./PFASandPlasticWasteStreamSolution" data-for="PFASandPlasticWasteStreamSolution">The Chemical Crisis: An Evaluation of Pyrolysis as an Integrated Solution</a></li><li><a href="./BioregionalKnowledgeCommonsSummary" data-for="BioregionalKnowledgeCommonsSummary">Bioregional Knowledge Commoning: Summary</a></li><li><a href="./BioregionalKnowledgeCommoning1" data-for="BioregionalKnowledgeCommoning1">Bioregional Knowledge Commoning - Part 1: Foundations and Participatory Ontology Design</a></li><li><a href="./BioregionalKnowledgeCommoning2" data-for="BioregionalKnowledgeCommoning2">Bioregional Knowledge Commoning - Part 2: Technical Architecture for Sovereignty and Engagement</a></li><li><a href="./BioregionalKnowledgeCommoning3" data-for="BioregionalKnowledgeCommoning3">Bioregional Knowledge Commoning - Part 3: Governance, Sustainability, and Implementation</a></li><li><a href="./SemanticDensityPrinciple" data-for="SemanticDensityPrinciple">Semantic Density as a Foundation for Knowledge Networks</a></li><li><a href="./FromSeperationToConnection" data-for="FromSeperationToConnection">From Separation to Connection — Rethinking Data in a Relational Age</a></li><li><a href="./BioregionURI" data-for="BioregionURI">A Proposed URI Scheme for Bioregions</a></li><li><a href="./PercolationFunding" data-for="PercolationFunding">Percolation Finance: Funding at the Critical Frontier</a></li><li><a href="./GraphsForDeSci" data-for="GraphsForDeSci">Discourse Graphs for DeSci</a></li><li><a href="./DiscourseGraphs" data-for="DiscourseGraphs">Discourse Graphs for Civic Knowledge Commons</a></li><li><a href="./KnowledgeCommons" data-for="KnowledgeCommons">Knowledge Commons</a></li><li><a href="./KnowledgeGraph" data-for="KnowledgeGraph">Knowledge Graph</a></li><li><a href="./OpenProtocols" data-for="OpenProtocols">Open Protocols</a></li><li><a href="./metacrisis" data-for="metacrisis">Understanding the Metacrisis</a></li><li><a href="./cosmolocalism" data-for="cosmolocalism">Cosmo-Localism</a></li><li><a href="./resume" data-for="resume">Resume</a></li><li><a href="./siteDesign" data-for="siteDesign">About This Site</a></li><li><div class="folder-outer "><ul style="padding-left:0;" class="content" data-folderul></ul></div></li></ul></div></li><li id="explorer-end"></li></ul></div></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="./">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Discourse Graphs for DeSci</a></div></nav><h1 class="article-title">Discourse Graphs for DeSci</h1><p show-comma="true" class="content-meta"><span>Nov 24, 2024</span><span>13 min read</span></p></div></div><article class="popover-hint"><p>Decentralized Science (DeSci) seeks to address issues in traditional scientific practices around funding, publishing, and collaboration. Discourse graphs provide an elegant framework that can support the full spectrum of scientific work - from synthesizing existing research to mapping out and funding new frontiers.</p>
+<h2 id="why-do-we-need-new-tools">Why Do We Need New Tools?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-do-we-need-new-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The traditional scientific process faces several challenges:</p>
+<ul>
+<li>Research collaboration is disincentivized by the “first author claims all” paradigm</li>
+<li>High-quality experimental work often goes uncredited when it’s “just” supporting other papers</li>
+<li>Traditional publication methods delay sharing valuable insights until a complete narrative is formed</li>
+<li>Research funding lacks efficient markets for impact and risk-taking</li>
+<li>Synthesis of scientific knowledge is rare, time-consuming, and arduous for individual researchers [Chan, 2021]</li>
+<li>Increasing specialization creates silos, making it difficult to interpret findings across domains</li>
+<li>Limited search capabilities hamper discovery across fields due to terminology differences</li>
+</ul>
+<h2 id="graph-based-science-from-simple-to-sophisticated">Graph-Based Science: From Simple to Sophisticated<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#graph-based-science-from-simple-to-sophisticated" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code class="mermaid">graph BT
+    S[Source]
+    E[Evidence]
+    Q[Question]
+    C[Claim]
+
+    S -->|&quot;substantiate/contextualize&quot;| E
+    E -->|&quot;support/oppose&quot;| C
+    C -->|&quot;synthesizes&quot;| E
+    E -->|&quot;inform/generate&quot;| Q
+    C -->|&quot;inform/generate&quot;| Q
+    
+    style Q fill:#ffd700,color:#000
+    style C fill:#00cc99,color:#000
+    style E fill:#ff1493,color:#000
+    style S fill:#ffffff,color:#000
+</code></pre>
+<p><a href="./DiscourseGraphs" class="internal alias" data-slug="DiscourseGraphs">Discourse graphs</a> provide an elegent framework for structuring and sharing scientific arguments (see <a href="./SemanticDensityPrinciple" class="internal alias" data-slug="SemanticDensityPrinciple">Semantic Density Principle</a> for how structured representation enhances effectiveness):</p>
+<ul>
+<li>Questions that drive inquiry</li>
+<li>Claims that propose answers</li>
+<li>Evidence that supports claims</li>
+<li>Clear links between these elements</li>
+<li>Granular representation at the claim level while preserving crucial context</li>
+<li>Ability to decompose complex arguments while maintaining connections to supporting evidence [Chan, 2021]</li>
+</ul>
+<p>This simple structure enables:</p>
+<ul>
+<li>Early sharing of progress</li>
+<li>Building upon others’ work effectively</li>
+<li>Tracking contributions transparently</li>
+<li>Facilitating <a href="https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/" class="external">decentralized coordination<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> and peer review</li>
+<li>Understanding and properly interpreting findings across different domains</li>
+</ul>
+<p><img src="./sampleDiscourseGraph.png" alt="sampleDiscourseGraph" loading="lazy"/>
+<em>Example discourse graph for the question: Are bans an effective way to mitigate antisocial behavior in online forums? (Source: Joel Chan)</em></p>
+<h3 id="from-knowledge-synthesis-to-full-research-lifecycle">From Knowledge Synthesis to Full Research Lifecycle<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#from-knowledge-synthesis-to-full-research-lifecycle" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Discourse graphs currently focus on two primary functions:</p>
+<ol>
+<li>
+<p><strong>Knowledge Synthesis and Sharing</strong></p>
+<ul>
+<li>Structured representation of scientific claims and evidence</li>
+<li>Facilitating literature review and gap analysis</li>
+<li>Accelerating researcher onboarding through structured knowledge</li>
+<li>Supporting cross-domain discovery and integration</li>
+</ul>
+</li>
+<li>
+<p><strong>Open-source, Modular Research Communication</strong></p>
+<ul>
+<li>Breaking research into discrete, reusable units (questions/claims/evidence)</li>
+<li>Enabling collaborative, iterative research development</li>
+<li>Supporting transparent attribution of contributions</li>
+<li>Facilitating discovery of collaboration opportunities</li>
+</ul>
+</li>
+</ol>
+<p>The basic discourse graph framework can be extended to accommodate the entire scientific process, particularly through goal-oriented models like the Outcomes Graph. This extension adds several key capabilities:</p>
+<ol>
+<li>
+<p><strong>Goal-Oriented Structure</strong></p>
+<ul>
+<li>Define clear goal states as positive statements of capability or achievement</li>
+<li>Map pathways from current knowledge to desired outcomes</li>
+<li>Identify and categorize constraints and potential solutions:
+<ul>
+<li>Constraints: Known impossible outcomes with complete understanding</li>
+<li>Solutions: Known possible outcomes with high understanding</li>
+<li>Hypothesized constraints: Potentially impossible outcomes with low understanding</li>
+<li>Hypothesized solutions: Potentially possible outcomes with low understanding</li>
+</ul>
+</li>
+<li>Track both technical and commercial viability through evidenced discussions</li>
+</ul>
+</li>
+<li>
+<p><strong>Strategic Elements</strong></p>
+<ul>
+<li>Open problems blocking progress</li>
+<li>Research directions and approaches</li>
+<li>Market constraints and opportunities</li>
+<li>Logical relationships (AND/OR) between outcomes that determine:
+<ul>
+<li>Necessity: How uniquely an outcome enables other outcomes</li>
+<li>Sufficiency: The degree to which an outcome enables others by itself</li>
+</ul>
+</li>
+<li>Evidence tracking for all claims and relationships</li>
+</ul>
+</li>
+<li>
+<p><strong>Applied Science Coordination</strong></p>
+<ul>
+<li>Track market and scientific research findings</li>
+<li>Enable cross-domain communication through structured knowledge representation</li>
+<li>Support venture creation by identifying:
+<ul>
+<li>Areas of neglect (fewer existing companies)</li>
+<li>Opportunities for combinatorial innovation</li>
+<li>Critical pathways and bottlenecks</li>
+</ul>
+</li>
+<li>Map optimal paths to achieving high-impact ventures</li>
+<li>Identify non-obvious intervention points through knowledge combination</li>
+</ul>
+</li>
+</ol>
+<p>This evolution enables discourse graphs to support:</p>
+<ul>
+<li>Research planning and coordination through structured outcome mapping</li>
+<li>Funding allocation and impact tracking based on necessity and sufficiency</li>
+<li>Collaborative research execution with clear attribution of contributions</li>
+<li>Knowledge synthesis and sharing across domains</li>
+<li>Research communication and discovery</li>
+<li>Rapid assembly of expertise for specific challenges</li>
+<li>Fair allocation of funding based on expertise and contribution profiles</li>
+</ul>
+<p>By supporting the full research lifecycle in one integrated framework, discourse graphs help create a more efficient and collaborative scientific ecosystem that can effectively move the knowledge frontier forward through venture creation.</p>
+<pre><code class="mermaid">graph BT
+    S[Source]
+    E[Evidence]
+    C[Claim]
+    Q[Question]
+    
+    RD[Research Direction]
+    G[Goal State]
+    OP[Open Problems]
+    M[Constraints]
+    IV[Intervention Points]
+    O[Outcome]
+    H[Hypothesis]
+    EX[Experiment]
+    
+    IC[Impact Certificate]
+    F[Funding]
+    RR[Retroactive Rewards]
+    
+    S -->|&quot;substantiate&quot;| E
+    E -->|&quot;support/oppose&quot;| C
+    E -->|&quot;inform/generate&quot;| Q
+    C -->|&quot;inform/generate&quot;| Q
+    
+    G -->|&quot;defines&quot;| Q
+    RD -->|&quot;guides&quot;| Q
+    RD -->|&quot;identifies&quot;| OP
+    OP -->|&quot;blocks&quot;| G
+    M -->|&quot;constrains&quot;| G
+    IV -->|&quot;enables&quot;| O
+    O -->|&quot;achieves&quot;| G
+    
+    RD -->|&quot;generates&quot;| H
+    H -->|&quot;guides&quot;| EX
+    EX -->|&quot;produces&quot;| E
+    EX -->|&quot;validates/refutes&quot;| H
+    H -->|&quot;proposes&quot;| IV
+    
+    C -->|&quot;validates&quot;| RD
+    C -->|&quot;addresses&quot;| OP
+    C -->|&quot;establishes&quot;| M
+    C -->|&quot;proposes&quot;| IV
+    E -->|&quot;identifies&quot;| M
+    E -->|&quot;suggests&quot;| IV
+    
+    M -->|&quot;informs&quot;| IV
+    RD -->|&quot;considers&quot;| M
+    
+    IC -->|&quot;enables&quot;| F
+    F -->|&quot;supports&quot;| RD
+    F -->|&quot;funds&quot;| EX
+    O -->|&quot;generates&quot;| RR
+    RR -->|&quot;flows to&quot;| IC
+    
+    style Q fill:#ffd700,color:#000
+    style C fill:#00cc99,color:#000
+    style E fill:#ff1493,color:#000
+    style S fill:#ffffff,color:#000
+    style G fill:#8a2be2,color:#fff
+    style M fill:#ff6347,color:#000
+    style OP fill:#4682b4,color:#fff
+    style RD fill:#32cd32,color:#000
+    style IV fill:#dda0dd,color:#000
+    style O fill:#ffa500,color:#000
+    style H fill:#FFA07A,color:#000
+    style EX fill:#87CEEB,color:#000
+    style IC fill:#FFB6C1,color:#000
+    style F fill:#98FB98,color:#000
+    style RR fill:#DDA0DD,color:#000
+</code></pre>
+<h3 id="integration-with-decentralized-finance-knowledge-management-and-ai">Integration with Decentralized Finance, Knowledge Management, and AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-with-decentralized-finance-knowledge-management-and-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>DeSci Discourse Graphs create a unified framework integrating financial incentives, knowledge management, and AI capabilities:</p>
+<h4 id="1-decentralized-financial-infrastructure">1. Decentralized Financial Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-decentralized-financial-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Embedded Funding Markets Through <a href="https://www.punkrockbio.com/p/exploring-impact-certificates" class="external">Impact Certificates<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong></p>
+<ol>
+<li>
+<p><strong>Knowledge-Driven Funding</strong></p>
+<ul>
+<li>Impact certificates issued based on research directions identified in discourse graphs</li>
+<li>Clear mapping between funding opportunities and scientific frontiers</li>
+<li>Transparent connection between investments and expected outcomes</li>
+<li>Natural integration with IP NFTs and other tokenized research assets</li>
+</ul>
+</li>
+<li>
+<p><strong>Funding Intelligence</strong></p>
+<ul>
+<li>Replicates VC’s successful distributed intelligence model for public goods
+<ul>
+<li>“What if impact certificates could be the non-profit version of stock certificates?” - Juan Benet</li>
+</ul>
+</li>
+<li>Multiple layers of funders can specialize in different aspects of research</li>
+<li>Enables efficient matching of capital with domain expertise</li>
+<li>Creates feedback loops between outcomes and future funding decisions</li>
+</ul>
+</li>
+<li>
+<p><strong>Retroactive Reward Systems</strong></p>
+<ul>
+<li>Impact certificate holders receive rewards based on verified outcomes</li>
+<li>Clear attribution of value through discourse graph connections</li>
+<li>Incentivizes early funding of promising research directions</li>
+<li>Supports long-term research through outcome-based compensation</li>
+</ul>
+</li>
+</ol>
+<p><strong>Token-Based Incentives</strong></p>
+<ul>
+<li>Rewards for high-quality discourse structures</li>
+<li>Bonuses for connecting isolated knowledge areas</li>
+<li>Recognition for identifying key claims and evidence</li>
+<li>Incentives for validating AI-generated structures</li>
+<li>Markets for knowledge mining and curation</li>
+</ul>
+<h4 id="2-decentralized-knowledge-management">2. Decentralized Knowledge Management<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-decentralized-knowledge-management" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong><a href="./KnowledgeGraph" class="internal alias" data-slug="KnowledgeGraph">Knowledge Graph</a> Infrastructure</strong></p>
+<ul>
+<li>Host discourse graphs on decentralized networks (e.g., <a href="https://origintrail.io/blog/announcing-the-id-theory-desci-ipo-initial-paranet-offering" target="_blank" class="external">OriginTrail’s DeSci Knowledge Graph<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li>Ensure knowledge is discoverable, verifiable, and properly attributed</li>
+<li>Support knowledge mining and incentivization through tokens</li>
+<li>Create foundation for autonomous research agents</li>
+</ul>
+<p><strong>Enhanced Peer Review Mechanisms</strong></p>
+<ol>
+<li>
+<p>Granular Review Scope</p>
+<ul>
+<li>Individual claims can be challenged or supported independently</li>
+<li>Researchers focus expertise on specific aspects</li>
+<li>Validation of claim-evidence relationships</li>
+<li>Assessment of cross-domain connections</li>
+</ul>
+</li>
+<li>
+<p>Constructive Addition</p>
+<ul>
+<li>Peers extend work by adding supporting evidence</li>
+<li>Reproduction attempts tracked and linked to claims</li>
+<li>Failed reproductions become valuable data points</li>
+<li>Alternative interpretations coexist with clear evidential support</li>
+</ul>
+</li>
+<li>
+<p>Dynamic Validation</p>
+<ul>
+<li>Real-time updates as new evidence emerges</li>
+<li>Clear tracking of reliability through reproduction attempts</li>
+<li>Tracking of knowledge reuse and impact</li>
+<li>Transparent resolution of conflicting evidence</li>
+</ul>
+</li>
+</ol>
+<h4 id="3-ai-integration-and-knowledge-translation">3. AI Integration and Knowledge Translation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-ai-integration-and-knowledge-translation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Automated Knowledge Processing</strong></p>
+<ul>
+<li>AI services process papers into initial discourse graphs</li>
+<li>Knowledge miners validate and refine AI-generated discourse</li>
+<li>Progressive improvement through feedback loops</li>
+<li>Preservation of attribution and provenance</li>
+</ul>
+<p><strong>Multi-Audience Knowledge Translation</strong></p>
+<ul>
+<li>Technical summaries for domain experts</li>
+<li>Simplified explanations for adjacent fields</li>
+<li>Public-facing narratives for broader impact</li>
+<li>Policy-relevant briefings for decision makers</li>
+<li>Maintains links to technical details and evidence</li>
+<li>Enables exploration at multiple levels of detail</li>
+</ul>
+<p><strong>Advanced AI Services</strong></p>
+<ul>
+<li>Structure-aware scientific chat interfaces</li>
+<li>Natural navigation between claims, evidence, and questions</li>
+<li>Chain of reasoning explanation</li>
+<li>Gap identification and question generation</li>
+<li>Context-aware citation and evidence distinction</li>
+<li>Cross-domain knowledge traversal</li>
+</ul>
+<p>This integrated system creates a foundation for autonomous scientific research, where AI agents can:</p>
+<ul>
+<li>Navigate verified scientific knowledge</li>
+<li>Generate testable hypotheses</li>
+<li>Design experimental protocols</li>
+<li>Synthesize findings across domains</li>
+<li>Propose new research directions</li>
+<li>Communicate findings to diverse audiences</li>
+<li>Maintain clear provenance and attribution</li>
+</ul>
+<p>The synergy between financial incentives, knowledge management, and AI capabilities enables a more efficient, transparent, and collaborative scientific ecosystem, where:</p>
+<ul>
+<li>Knowledge is more accessible and verifiable</li>
+<li>Contributions are fairly valued and rewarded</li>
+<li>Research can progress more rapidly</li>
+<li>Insights can reach broader audiences</li>
+<li>Cross-domain collaboration is enhanced</li>
+</ul>
+<h2 id="cross-domain-integration-and-collective-intelligence">Cross-Domain Integration and Collective Intelligence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-domain-integration-and-collective-intelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Discourse graphs transcend traditional academic boundaries, enabling integration not just between scientific disciplines, but between different modes of knowledge creation and application in society. This broader integration creates a framework for collective intelligence that spans from specialized research to practical implementation.</p>
+<h3 id="scientific-cross-domain-integration">Scientific Cross-Domain Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scientific-cross-domain-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Discourse graphs address the increasing specialization and fragmentation within science by:</p>
+<ul>
+<li>Creating claim-level representations that bridge disciplinary languages</li>
+<li>Preserving crucial context for cross-disciplinary interpretation</li>
+<li>Enabling sophisticated knowledge discovery through:
+<ul>
+<li>Claim-level (rather than document-level) operations</li>
+<li>Rich networks of contextual metadata</li>
+<li>Discourse-based concept embedding</li>
+<li>Logical and discursive relationship mapping</li>
+</ul>
+</li>
+<li>Supporting synthesis across disciplinary boundaries</li>
+</ul>
+<h3 id="integration-with-societal-knowledge-systems">Integration with Societal Knowledge Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-with-societal-knowledge-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Beyond scientific domains, discourse graphs enable seamless connection with other knowledge ecosystems:</p>
+<p><strong>1. <a href="./DiscourseGraphs" class="internal alias" data-slug="DiscourseGraphs">Civic Knowledge Commons</a></strong></p>
+<ul>
+<li>Bottom-up knowledge creation through community participation</li>
+<li>Bridging specialized research with practical applications</li>
+<li>Evidence-based development of societal infrastructure</li>
+<li>Bidirectional knowledge flow between experts and practitioners</li>
+<li>Transformation of siloed processes into participatory models, such as a <a href="./BioregionalKnowledgeCommons" class="internal" data-slug="BioregionalKnowledgeCommons">BioregionalKnowledgeCommons</a></li>
+</ul>
+<p><strong>2. Professional Knowledge Networks</strong></p>
+<ul>
+<li>Integration with practitioner expertise</li>
+<li>Connection to industry best practices</li>
+<li>Translation of research into applied solutions</li>
+<li>Feedback loops from implementation to research</li>
+</ul>
+<p><strong>3. Educational Systems</strong></p>
+<ul>
+<li>Curriculum development informed by current research</li>
+<li>Student participation in knowledge creation</li>
+<li>Accessible pathways to deeper understanding</li>
+<li>Integration of classroom insights with broader knowledge base</li>
+</ul>
+<h3 id="enabling-collective-intelligence">Enabling Collective Intelligence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#enabling-collective-intelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>This comprehensive integration creates new possibilities for collective intelligence:</p>
+<ol>
+<li>
+<p><strong>Multi-Directional Knowledge Flow</strong></p>
+<ul>
+<li>Research informing policy and practice</li>
+<li>Practice informing research priorities</li>
+<li>Community insights shaping research questions</li>
+<li>Implementation feedback improving theories</li>
+</ul>
+</li>
+<li>
+<p><strong>Adaptive Knowledge Systems</strong></p>
+<ul>
+<li>Real-time integration of new findings</li>
+<li>Dynamic response to emerging challenges</li>
+<li>Continuous refinement of best practices</li>
+<li>Rapid dissemination of proven solutions</li>
+</ul>
+</li>
+<li>
+<p><strong>Democratic Knowledge Creation</strong></p>
+<ul>
+<li>Inclusive participation in knowledge development</li>
+<li>Transparent evaluation of evidence</li>
+<li>Distributed expertise networks</li>
+<li>Collaborative problem-solving</li>
+</ul>
+</li>
+</ol>
+<p>This expanded framework is crucial for addressing complex societal challenges that require:</p>
+<ul>
+<li>Integration of multiple forms of expertise</li>
+<li>Connection between research and implementation</li>
+<li>Rapid adaptation to changing conditions</li>
+<li>Broad participation in solution development</li>
+<li>Rigorous evaluation of outcomes</li>
+</ul>
+<p>The structure of discourse graphs allows different knowledge communities to maintain their specific contexts while creating clear interfaces for collaboration. This preserves the rigor of specialized knowledge while making it more accessible and actionable across domains.</p>
+<p>Examples of potential applications include:</p>
+<ul>
+<li>Environmental management integrating scientific research, local knowledge, and policy implementation</li>
+<li>Public health initiatives combining medical research, community practice, and social programs</li>
+<li>Educational innovation connecting learning science, classroom experience, and student outcomes</li>
+<li>Urban planning synthesizing technical expertise, community needs, and implementation constraints</li>
+</ul>
+<p>By enabling these connections while preserving context and rigor, discourse graphs provide a foundation for more effective, inclusive, and responsive knowledge systems that can better serve societal needs.</p>
+<h2 id="summary-of-key-benefits">Summary of Key Benefits<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#summary-of-key-benefits" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The integration of discourse graphs, Web3, and AI creates three fundamental advantages for decentralized science:</p>
+<p><strong>1. Enhanced Knowledge Organization and Discovery</strong></p>
+<ul>
+<li>Structured representation of scientific claims and evidence enables more effective knowledge synthesis</li>
+<li>Cross-domain integration supports discovery of non-obvious connections</li>
+<li>Integration of diverse knowledge systems and perspectives</li>
+<li>Multi-audience knowledge translation capabilities</li>
+<li>Bidirectional knowledge flow between experts and practitioners</li>
+</ul>
+<p><strong>2. Improved Research Coordination and Planning</strong></p>
+<ul>
+<li>Goal-oriented roadmaps connect research efforts to desired outcomes</li>
+<li>Clear identification of critical pathways, bottlenecks, and intervention points</li>
+<li>Strategic alignment of technical development with market opportunities</li>
+<li>Enhanced ability to track progress and measure contribution significance</li>
+<li>Support for specialized labor and expertise across complex projects</li>
+<li>Modular, constructive peer review processes</li>
+<li>Rapid adaptation to emerging challenges and feedback</li>
+<li>Enhanced coordination across scientific and civic domains</li>
+</ul>
+<p><strong>3. Market-Driven Innovation and Impact</strong></p>
+<ul>
+<li>Transparent attribution and valuation of scientific contributions</li>
+<li>Efficient markets for research outcomes through impact certificates</li>
+<li>Risk-sharing mechanisms for ambitious research initiatives</li>
+<li>Market-based discovery of high-leverage opportunities</li>
+<li>Incentivization of crucial but traditionally undervalued work like synthesis and replication</li>
+<li>Alignment of incentives with societal needs</li>
+<li>Support for long-term, systemic solutions</li>
+<li>Recognition and reward for knowledge synthesis and curation</li>
+</ul>
+<p>These benefits create a foundation for a more effective, collaborative, and impact-driven scientific ecosystem. By addressing the core challenges of traditional scientific practice while enabling new capabilities, discourse graphs and their extensions provide a framework for truly decentralized science.</p>
+<h2 id="moving-forward">Moving Forward<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#moving-forward" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>To advance graph-based DeSci, we need:</p>
+<ol>
+<li>
+<p><strong>Core Framework Development</strong></p>
+<ul>
+<li>Refine the basic discourse graph structure</li>
+<li>Create standards for extensions and interoperability with decentralized knowledge graphs</li>
+<li>Develop best practices for different use cases</li>
+<li>Address challenges of synthesizing knowledge across disciplines</li>
+<li>Design protocols for knowledge verification and attribution</li>
+</ul>
+</li>
+<li>
+<p><strong>Tool Development</strong></p>
+<ul>
+<li>Build flexible platforms supporting core framework and extensions</li>
+<li>Create user-friendly interfaces</li>
+<li>Enable impact tracking and attribution through Web3 mechanisms</li>
+<li>Support certificate issuance and trading on decentralized infrastructure</li>
+<li>Develop AI-assisted tools for knowledge mining and synthesis</li>
+<li>Enable integration with decentralized storage and verification systems</li>
+</ul>
+</li>
+<li>
+<p><strong>Market Development</strong></p>
+<ul>
+<li>Create efficient markets for impact certificates on Web3 infrastructure</li>
+<li>Develop risk-sharing mechanisms through smart contracts</li>
+<li>Build tools for impact evaluation and reputation systems</li>
+<li>Enable proper valuation of synthesis work through tokenized incentives</li>
+<li>Design token economics for knowledge mining and validation</li>
+</ul>
+</li>
+<li>
+<p><strong>Community Building</strong></p>
+<ul>
+<li>Define and support specialized community roles:
+<ul>
+<li>Primary researchers contributing findings</li>
+<li>Knowledge synthesizers formalizing research into frameworks</li>
+<li>Direction setters identifying high-value research areas</li>
+<li>Active readers connecting ideas across domains</li>
+<li>Quality evaluators maintaining signal-to-noise ratio</li>
+</ul>
+</li>
+<li>Design incentives that capture value from both content creation and curation</li>
+<li>Foster collaboration between researchers, funders, and Web3 developers</li>
+<li>Create sustainable models for distributing synthesis work across communities</li>
+<li>Build domain-specific communities while enabling cross-disciplinary exchange</li>
+<li>Experiment with new funding and governance models through DAOs</li>
+</ul>
+</li>
+</ol>
+<p>These initiatives lay the groundwork for transforming how we conduct, communicate, and coordinate scientific research. While early implementations are already showing promise (see <a href="#-appendix-a-current-implementation-landscape" class="internal alias">Appendix A: Current Implementation Landscape</a>), realizing the full potential of discourse graphs will require sustained effort and collaboration across the DeSci ecosystem.</p>
+<p>The stakes could not be higher. Humanity faces increasingly complex, interconnected challenges that require unprecedented collaboration across domains and sectors. From climate change to public health, our greatest challenges are systemic in nature. Through discourse graphs, we can build the collective intelligence needed to understand these challenges and implement effective, scalable solutions.</p>
+<script src="https://giscus.app/client.js" data-repo="DarrenZal/Quartz" data-repo-id="R_kgDONJp5NA" data-category="Announcements" data-category-id="DIC_kwDONJp5NM4Cj_Fw" data-mapping="pathname" data-strict="0" data-reactions-enabled="1" data-emit-metadata="0" data-input-position="bottom" data-theme="dark_dimmed" data-lang="en" crossorigin="anonymous" async>
+</script>
+<hr/>
+<p>References:</p>
+<ul>
+<li>“Discourse Graphs and the Future of Science” (<a href="https://research.protocol.ai/blog/2023/discourse-graphs-and-the-future-of-science/" class="external">https://research.protocol.ai/blog/2023/discourse-graphs-and-the-future-of-science/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li>“The Outcomes Graph: A Protocol for Applied Science Coordination” (<a href="https://deepscienceventures.com/content/the-outcomes-graph-2" class="external">https://deepscienceventures.com/content/the-outcomes-graph-2<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)*</li>
+<li>“What is a decentrlaized discourse graph” (<a href="https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/" class="external">https://scalingsynthesis.com/q-what-is-a-decentralized-discourse-graph/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li>Chan, J. (2021). “Discourse Graphs for Augmented Knowledge Synthesis: What and Why”*</li>
+<li>“Outcomes Graph: A protocol for applied science coordination” (<a href="https://deepscienceventures.com/content/the-outcomes-graph-2" class="external">https://deepscienceventures.com/content/the-outcomes-graph-2<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li>“Exploring Impact Certificates” (<a href="https://www.punkrockbio.com/p/exploring-impact-certificates" class="external">https://www.punkrockbio.com/p/exploring-impact-certificates<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li>“Collective grassroots knowledge generation with lab discourse graphs” (<a href="https://roamresearch.com/#/app/akamatsulab/page/ud1vxU56v" class="external">https://roamresearch.com/#/app/akamatsulab/page/ud1vxU56v<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+</ul>
+<hr/>
+<h1 id="appendix-a-current-implementation-landscape">Appendix A: Current Implementation Landscape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#appendix-a-current-implementation-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>While the theoretical framework for discourse graphs is well-developed, several pioneering tools are already putting these concepts into practice:</p>
+<ul>
+<li><strong><a href="https://www.lateral.io/" class="external">Lateral.io<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> provides an AI-powered platform for converting academic papers into structured knowledge graphs, enabling researchers to discover non-obvious connections across disciplines</li>
+<li><strong><a href="https://samepage.network/" class="external">Samepage.network<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> focuses on collaborative knowledge synthesis, allowing multiple researchers to build shared understanding through connected note networks</li>
+<li><strong><a href="https://roamjs.com/extensions/discourse-graph" class="external">RoamResearch<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> tooling supports bottom-up creation of discourse graphs through bidirectional linking and knowledge organization</li>
+<li><strong><a href="https://networkgoods.io/" class="external">Protocol Labs’ Network Goods<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> project demonstrates how discourse graphs can be implemented within larger research ecosystems</li>
+<li><strong><a href="https://deepscienceventures.com/content/the-outcomes-graph-2" class="external">Deep Science Ventures<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> developed the Outcomes Graph approach, implementing it in Roam Research to map scientific frontiers and identify venture opportunities</li>
+</ul>
+<p>These early implementations reveal both the potential and challenges of discourse graphs in practice. While current tools still face UX challenges for team collaboration, they provide valuable insights for future development:</p>
+<ul>
+<li>Need for balance between structure and flexibility</li>
+<li>Importance of seamless integration with existing research workflows</li>
+<li>Value of progressive enhancement in tool adoption</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><div class="graph-header"><h3>Graph View</h3></div><div class="graph-outer"><div id="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false}"></div><button id="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div id="global-graph-outer"><div id="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;showKnowledgeGraph&quot;:false}"></div></div></div><div class="toc desktop-only"><button type="button" id="toc" class aria-controls="toc-content" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="toc-content" class><ul class="overflow"><li class="depth-1"><a href="#why-do-we-need-new-tools" data-for="why-do-we-need-new-tools">Why Do We Need New Tools?</a></li><li class="depth-1"><a href="#graph-based-science-from-simple-to-sophisticated" data-for="graph-based-science-from-simple-to-sophisticated">Graph-Based Science: From Simple to Sophisticated</a></li><li class="depth-2"><a href="#from-knowledge-synthesis-to-full-research-lifecycle" data-for="from-knowledge-synthesis-to-full-research-lifecycle">From Knowledge Synthesis to Full Research Lifecycle</a></li><li class="depth-2"><a href="#integration-with-decentralized-finance-knowledge-management-and-ai" data-for="integration-with-decentralized-finance-knowledge-management-and-ai">Integration with Decentralized Finance, Knowledge Management, and AI</a></li><li class="depth-1"><a href="#cross-domain-integration-and-collective-intelligence" data-for="cross-domain-integration-and-collective-intelligence">Cross-Domain Integration and Collective Intelligence</a></li><li class="depth-2"><a href="#scientific-cross-domain-integration" data-for="scientific-cross-domain-integration">Scientific Cross-Domain Integration</a></li><li class="depth-2"><a href="#integration-with-societal-knowledge-systems" data-for="integration-with-societal-knowledge-systems">Integration with Societal Knowledge Systems</a></li><li class="depth-2"><a href="#enabling-collective-intelligence" data-for="enabling-collective-intelligence">Enabling Collective Intelligence</a></li><li class="depth-1"><a href="#summary-of-key-benefits" data-for="summary-of-key-benefits">Summary of Key Benefits</a></li><li class="depth-1"><a href="#moving-forward" data-for="moving-forward">Moving Forward</a></li><li class="depth-0"><a href="#appendix-a-current-implementation-landscape" data-for="appendix-a-current-implementation-landscape">Appendix A: Current Implementation Landscape</a></li></ul></div></div><div class="backlinks"><h3>Backlinks</h3><ul class="overflow"><li><a href="./BioregionURI" class="internal">A Proposed URI Scheme for Bioregions</a></li><li><a href="./BioregionalKnowledgeCommoning1" class="internal">Bioregional Knowledge Commoning - Part 1: Foundations and Participatory Ontology Design</a></li><li><a href="./DiscourseGraphs" class="internal">Discourse Graphs for Civic Knowledge Commons</a></li><li><a href="./FromSeperationToConnection" class="internal">From Separation to Connection — Rethinking Data in a Relational Age</a></li><li><a href="./KnowledgeCommons" class="internal">Knowledge Commons</a></li><li><a href="./KnowledgeGraph" class="internal">Knowledge Graph</a></li><li><a href="./" class="internal">Exploring Protocols for Regenerative Global Civilization</a></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v1.0.0</a> © 2025</p><ul><li><a href="https://github.com/jackyzha0/quartz">GitHub</a></li><li><a href="https://discord.gg/cRFFHYye7t">Discord Community</a></li></ul></footer></div></div></body><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);
+</script><script type="module">
+          let mermaidImport = undefined
+          document.addEventListener('nav', async () => {
+            if (document.querySelector("code.mermaid")) {
+              mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+              const mermaid = mermaidImport.default
+              const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+              mermaid.initialize({
+                startOnLoad: false,
+                securityLevel: 'loose',
+                theme: darkMode ? 'dark' : 'default'
+              })
+
+              await mermaid.run({
+                querySelector: '.mermaid'
+              })
+            }
+          });
+          </script><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script src="./postscript.js" type="module"></script></html>

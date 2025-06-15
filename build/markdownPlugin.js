@@ -1,6 +1,6 @@
+import path from "path";
 import matter from "gray-matter";
 import { markdownToHtml } from "./markdownToHtml";
-import path from "path";
 
 export const markdownPlugin = {
 	name: "markdown-plugin",
